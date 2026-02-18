@@ -16,8 +16,7 @@ if 'nodes2' not in st.session_state:
     st.session_state['nodes2'] = []
 
 # Path to the Excel file
-file_path= r"C:\Users\HA255\PyCharmMiscProject\Idea-Triggers-Tools_T.xlsx"
-#file_path = 'Idea-Triggers-Tools_T.xlsx'
+file_path= "Idea-Triggers-Tools_T.xlsx"
 
 # Read the Excel file
 df = pd.read_excel(file_path)
@@ -360,3 +359,4 @@ if st.button("✨ Random-Idea-Triggers"):
     )
     st.write(
         f"Remember Inventors: Form of the solution may completely change with every new Idea! Count: {st.session_state.counter}")
+
