@@ -5,27 +5,6 @@ import pandas as pd
 import numpy as np
 import os
 
-def set_bg_hack():
-    st.markdown(
-        f"""
-        <style>
-        .stApp {{
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-                        url("https://images.unsplash.com/photo-1506318137071-a8e063b4b47e");
-            background-size: cover;
-            background-attachment: fixed;
-        }}
-        </style>
-        """,
-        unsafe_allow_html=True
-    )
-
-set_bg_hack()
-
-st.title("Dark Theme Dashboard")
-st.write("This app has a custom dark background.")
-
-
 # Initialize session state
 if 'graph' not in st.session_state:
     st.session_state['graph'] = None
@@ -378,5 +357,6 @@ if st.button("✨ Random-Idea-Triggers"):
     )
     st.write(
         f"Remember Inventors: Form of the solution may completely change with every new Idea! Count: {st.session_state.counter}")
+
 
 
