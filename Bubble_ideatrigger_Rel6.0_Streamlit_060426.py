@@ -95,7 +95,7 @@ with st.sidebar:
     )
     
     if "Force" in layout:
-        physics_enabled = st.checkbox("Enable floating physics", value=True)
+        physics_enabled = st.checkbox("Enable floating physics", value=False)
     else:
         physics_enabled = False
 
